@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 100px 150px;
+
+    span {
+        margin-bottom: 12px;
+    }
+}
+
+.content {
+    background-color: var(--white-darker);
+    border-radius: 20px;
+    max-width: 850px;
+    height: 460px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 10px 20px 0 rgba($color: #000000, $alpha: 0.25);
+    margin-top: 60px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: min(calc(100vw - 140px), 910px);
+        height: 460px;
+        background-color: var(--primary-lighter);
+        top: 40px;
+        left: -30px;
+        z-index: -1;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px 0 rgba($color: #000000, $alpha: 0.25);
+    }
+}
+
+.image {
+    width: 50%;
+    background: linear-gradient(rgba(27, 36, 59, 0.6) 100%, rgba(27, 36, 59, 0.6) 100%), url("../../images/Tower.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 20px 0 0 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+    justify-content: center;
+    padding: 0 10%;
+    background-color: var(--white-darker);
+    border-radius: 0 20px 20px 0;
+
+    img {
+        height: 35px;
+        width: auto;
+    }
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    a, p {
+        transition: .4s;
+
+        &:hover {
+            color: var(--primary-lightest);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .text {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+      padding: 80px 20px 100px; 
+    }
+
+    .content {
+        margin-top: 40px;
+        width: calc(100vw - 60px);
+        height: 300px;
+
+        &::after {
+            width: calc(100vw - 20px);
+            left: -20px;
+            top: 30px;
+            height: 300px;
+        }
+    }
+
+    .image {
+        display: none;
+    }
+
+    .text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        gap: 30px;
+    }
+}

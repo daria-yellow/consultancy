@@ -1,0 +1,76 @@
+@import "./fonts.scss";
+
+:root {
+  //colors
+  --white-default: #fefefe;
+  --white-darker: #f8f8f8;
+  --white-darkest: #f1f1f1;
+
+  --black-default: #282828;
+  --black-lighter: #949494;
+  --black-lightest: #eaeaea;
+
+  --primary-default: #001527;
+  --primary-lighter: #495062;
+  --primary-lightest: #767c89;
+
+  //font-styles
+  --header-style: "Cantarell", sans-serif;
+  --text-style: "Roboto", sans-serif;
+
+  //font-sizes
+  --desktop-h1: 64px;
+  --desktop-h2: 48px;
+  --desktop-h3: 30px;
+
+  --desktop-t1: 20px;
+  --desktop-t2: 16px;
+  --desktop-t3: 14px;
+  --desktop-t4: 12px;
+
+  --desktop-subtitle: 20px;
+
+  --tablet-h1: 40px;
+  --tablet-h2: 32px;
+  --tablet-h3: 20px;
+
+  --tablet-t1: 16px;
+  --tablet-t2: 14px;
+  --tablet-t3: 12px;
+  --tablet-t4: 10px;
+
+  --tablet-subtitle: 14px;
+
+  --mobile-h1: 30px;
+  --mobile-h2: 26px;
+  --mobile-h3: 20px;
+
+  --mobile-t1: 14px;
+  --mobile-t2: 12px;
+  --mobile-t3: 10px;
+  --mobile-t4: 8px;
+
+  --mobile-subtitle: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white-darkest);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

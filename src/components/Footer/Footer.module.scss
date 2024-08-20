@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: var(--primary-default);
+
+    img {
+        width: 30px;
+        height: auto;
+    }
+
+    p {
+        color: var(--white-darkest);
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 568px) {
+    .container {
+        padding: 20px;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+}

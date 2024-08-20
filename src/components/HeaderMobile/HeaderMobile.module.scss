@@ -1,0 +1,203 @@
+.container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .header {
+    z-index: 2;
+    background-color: var(--white-default);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .headerMobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: none;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    background-color: var(--white-default);
+    transition: all .6s;
+    border-radius: 0 0 0 1000px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .headerMobileOpened {
+    visibility: visible;
+    transform: scale(150);
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 40px;
+    color: var(--primary-default);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    background-color: var(--white-default);
+    z-index: 10;
+  }
+  
+  .burger {
+    flex-direction: column;
+    gap: 6px;
+    width: 30px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 6;
+    color: var(--primary-default);
+    display: none;
+  }
+  
+  @media (max-width: 739px) {
+    .navigation {
+      height: 100vh;
+      z-index: 5;
+      position: fixed;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      transition: all .6s;
+      transform: translate(200px, -250px);
+      flex-direction: column;
+      gap: 20px;
+      opacity: 0;
+      padding-bottom: 80px;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  
+  .navigationOpened {
+    visibility: visible;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
+  .navigation a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary-default);
+    position: relative;
+  }
+  
+  .burger .first, .second, .third {
+    border-radius: 5px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-default);
+    transition: all .6s;
+  }
+  
+  .burger .first {
+    animation: line-1-back 1s ease-in-out;
+  }
+  .burger .second {
+    animation: line-2-back 1s ease-in-out;
+  }
+  .burger .third {
+    animation: line-3-back 1s ease-in-out;
+  }
+  
+  .burgerOpened .first {
+    animation: line-1 1s forwards;
+  }
+  .burgerOpened .second {
+    animation: line-2 1s forwards;
+  }
+  .burgerOpened .third {
+    animation: line-3 1s forwards;
+  }
+
+  .logo {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 20;
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+  }
+  
+  @keyframes line-1 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(0, 8px, 0) rotate(0);
+    }
+    100% {
+      transform: translate3d(0, 8px, 0) rotate(45deg);
+    }
+  }
+  @keyframes line-2 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes line-3 {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(0, -8px, 0) rotate(0);
+    }
+    100% {
+      transform: translate3d(0, -8px, 0) rotate(135deg);
+    }
+  }
+  
+  @keyframes line-1-back {
+    0% {
+      transform: translate3d(0, 8px, 0) rotate(45deg);
+    }
+    50% {
+      transform: translate3d(0, 8px, 0) rotate(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  }
+  @keyframes line-2-back {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes line-3-back {
+    0% {
+      transform: translate3d(0, -8px, 0) rotate(135deg);
+    }
+    50% {
+      transform: translate3d(0, -8px, 0) rotate(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+  }
+  
