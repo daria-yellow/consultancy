@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styles from "./Founders.module.scss";
 import Image from 'next/image'
-import Man1 from "../../images/man1.png";
-import Man2 from "../../images/man2.png";
+import Man1 from "../../images/Man1.png";
+import Man2 from "../../images/Man2.png";
 
 
 const FoundersBlock: FC = () => {
