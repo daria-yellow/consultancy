@@ -32,7 +32,7 @@ const Header: FC = () => {
           Process
         </a>
         <a className="text__t2" href="#founders">
-          Founders
+          About us
         </a>
         <a className="text__t2" href="#contacts">
           Contacts
