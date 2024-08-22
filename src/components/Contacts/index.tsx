@@ -37,12 +37,12 @@ const ContactsBlock: FC = () => {
 
           <div className={styles.contact} ref={ref}>
             <Image src={Phone1} alt="whatsupp" />
-            <p className="text__t2">+971585450876</p>
+            <a href="https://wa.me/971547035893" className="text__t2" target="_blank">+971547035893</a>
           </div>
           
           <div className={styles.contact}>
             <Image src={Phone2} alt="phone" />
-            <p className="text__t2">+971547035893</p>
+            <p className="text__t2">+971585450876</p>
           </div>
         </div>
       </animated.div>

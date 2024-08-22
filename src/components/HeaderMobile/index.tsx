@@ -50,7 +50,7 @@ const HeaderMobile: FC = () => {
           href="#founders"
           onClick={() => setOpened(false)}
         >
-          Founders
+          About us
         </a>
         <a
           className="text__t1"
