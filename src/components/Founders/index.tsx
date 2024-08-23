@@ -19,7 +19,7 @@ const FoundersBlock: FC = () => {
           <Image alt="man1" src={Man1} />
           <div className={styles.name}>
             <p className="text__t1-semibold">MIGUEL GIAVERINI</p>
-            <p className="text__t2">Communications director</p>
+            <p className="text__t2">Communications Director</p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ const FoundersBlock: FC = () => {
           <Image alt="man2" src={Man2} />
           <div className={styles.name}>
             <p className="text__t1-semibold">FRANCESCO GIAVERINI</p>
-            <p className="text__t2">Head of finance and accounting</p>
+            <p className="text__t2">Head of Finance and Accounting</p>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const ContactsBlock: FC = () => {
     transform: inView ? "srale(1)" : "scale(0.9)",
     opacity: inView ? 1 : 0,
     config: { duration: 1500, easing: easings.easeOutExpo },
-    delay: 300
+    delay: 300,
   });
 
   return (
@@ -30,20 +30,28 @@ const ContactsBlock: FC = () => {
         <div className={styles.image} />
 
         <div className={styles.text}>
-          <div className={styles.contact}>
+          <a
+            href="mailto:contact@giaveriniglobal.com"
+            className={styles.contact}
+          >
             <Image src={Mail} alt="mail" />
-            <a href="mailto:contact@giaveriniglobal.com" className="text__t2">contact@giaveriniglobal.com</a>
-          </div>
+            <p className="text__t2">contact@giaveriniglobal.com</p>
+          </a>
 
-          <div className={styles.contact} ref={ref}>
+          <a
+            href="https://wa.me/971547035893"
+            target="_blank"
+            className={styles.contact}
+            ref={ref}
+          >
             <Image src={Phone1} alt="whatsupp" />
-            <a href="https://wa.me/971547035893" className="text__t2" target="_blank">+971547035893</a>
-          </div>
-          
-          <div className={styles.contact}>
+            <p className="text__t2">+971547035893</p>
+          </a>
+
+          <a href="tel:97158545087" className={styles.contact}>
             <Image src={Phone2} alt="phone" />
             <p className="text__t2">+971585450876</p>
-          </div>
+          </a>
         </div>
       </animated.div>
     </section>
