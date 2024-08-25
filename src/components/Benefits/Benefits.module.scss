@@ -1,10 +1,7 @@
 .container {
   height: 80vh;
   width: 100%;
-  background: linear-gradient(rgba(#1b243b, 0.6) 100%, rgba(#1b243b, 0.6) 100%),
-    url("../../images/bg-benefits.jpg");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(#1b243b, 0.6) 100%, rgba(#1b243b, 0.6) 100%);
   position: relative;
   color: var(--white-default);
 
@@ -15,6 +12,12 @@
 
   p {
     margin-bottom: 20px;
+  }
+
+  img {
+    z-index: -1;
+    height: 90vh !important;
+    object-fit: cover;
   }
 }
 
@@ -36,16 +39,15 @@
 }
 
 @media (max-width: 568px) {
-    .container {
-        li {
-            font-size: 14px;
-        }
-    }
-    .modal {
-        top: 30px;
-        right: 20px;
-        left: 20px;
-        padding: 18px 25px;
+  .container {
+    li {
+      font-size: 14px;
     }
   }
-  
+  .modal {
+    top: 30px;
+    right: 20px;
+    left: 20px;
+    padding: 18px 25px;
+  }
+}

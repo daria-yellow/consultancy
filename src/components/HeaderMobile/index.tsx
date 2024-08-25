@@ -23,6 +23,7 @@ const HeaderMobile: FC = () => {
 
       <a href="#intro" className={styles.logo} onClick={() => setOpened(false)}>
         <Image src={Logo} alt="logo" />
+        <p className="text__t2-semibold">Giaverini Global</p>
       </a>
       <div
         className={
