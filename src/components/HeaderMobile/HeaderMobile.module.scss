@@ -125,6 +125,10 @@
 
   .logo {
     position: fixed;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    letter-spacing: 3px;
     top: 10px;
     left: 20px;
     z-index: 20;

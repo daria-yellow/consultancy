@@ -2,21 +2,23 @@ import { FC } from "react";
 import styles from "./Benefits.module.scss";
 import { useInView } from "react-intersection-observer";
 import { animated, easings, useSpring } from "react-spring";
+import { Parallax } from "react-parallax";
+import Image from "../../images/bg-benefits.jpg";
 
 const BenefitsBlock: FC = () => {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-      });
-    
-      const springProps = useSpring({
-        transform: inView ? "srale(1)" : "scale(0.9)",
-        opacity: inView ? 1 : 0,
-        config: { duration: 1500, easing: easings.easeOutExpo },
-        delay: 300,
-      });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const springProps = useSpring({
+    transform: inView ? "srale(1)" : "scale(0.9)",
+    opacity: inView ? 1 : 0,
+    config: { duration: 1500, easing: easings.easeOutExpo },
+    delay: 300,
+  });
 
   return (
-    <div className={styles.container}>
+    <Parallax bgImage={Image.src} strength={500} className={styles.container}>
       <animated.div className={styles.modal} style={springProps}>
         <p className="subtitle">
           WHAT ARE THE BENEFITS OF OPENING A BUSINESS IN DUBAI?
@@ -31,7 +33,7 @@ const BenefitsBlock: FC = () => {
           <li ref={ref}>Free Zones Benefits</li>
         </ul>
       </animated.div>
-    </div>
+    </Parallax>
   );
 };
 
