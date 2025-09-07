@@ -50,7 +50,7 @@ const ContactsBlock: FC = () => {
 
           <a href="tel:97158545087" className={styles.contact}>
             <Image src={Phone2} alt="phone" />
-            <p className="text__t2">+971585450876</p>
+            <p className="text__t2">+971585304780</p>
           </a>
         </div>
       </animated.div>
