@@ -7,7 +7,7 @@ import Insta from "../../images/instagram.svg";
 const Footer: FC = () => {
   return (
     <footer className={styles.container}>
-      <p className="text__t4">Copyright © 2024 Giaverini Global Management.</p>
+      <p className="text__t4">Copyright © 2025 Giaverini Global Management.</p>
       <div className={styles.socials}>
         {/* <Image src={Tiktok} alt="tiktok" /> */}
         <a href="https://www.instagram.com/giaverini.global.dxb?igsh=MTdmdWtvczM3NGk1aw%3D%3D&utm_source=qr" target="_blank">
