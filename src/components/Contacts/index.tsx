@@ -39,16 +39,16 @@ const ContactsBlock: FC = () => {
           </a>
 
           <a
-            href="https://wa.me/971547035893"
+            href="https://wa.me/971585304780"
             target="_blank"
             className={styles.contact}
             ref={ref}
           >
             <Image src={Phone1} alt="whatsupp" />
-            <p className="text__t2">+971547035893</p>
+            <p className="text__t2">+971585304780</p>
           </a>
 
-          <a href="tel:97158545087" className={styles.contact}>
+          <a href="tel:971585304780" className={styles.contact}>
             <Image src={Phone2} alt="phone" />
             <p className="text__t2">+971585304780</p>
           </a>
